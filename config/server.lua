@@ -53,21 +53,6 @@ return {
                 }
             },
         },
-        vlcgarage = {
-            label = 'VLC Garage',
-            vehicleType = VehicleType.CAR,
-            accessPoints = {
-                {
-                    blip = {
-                        name = 'Public Parking',
-                        sprite = 357,
-                        color = 3,
-                    },
-                    coords = vec4(-532.1929, 59.4621, 52.2120, 84.0650),
-                    spawn = vec4(-533.5617, 66.7221, 52.9702, 85.0236),
-                }
-            },
-        },
         sapcounsel = {
             label = 'San Andreas Parking',
             vehicleType = VehicleType.CAR,

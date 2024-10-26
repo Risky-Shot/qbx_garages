@@ -1,5 +1,6 @@
-assert(lib.checkDependency('qbx_core', '1.15.1', true))
+assert(lib.checkDependency('qbx_core', '1.19.0', true))
 assert(lib.checkDependency('qbx_vehicles', '1.3.1', true))
+lib.versionCheck('Qbox-project/qbx_garages')
 
 ---@class ErrorResult
 ---@field code string
@@ -55,7 +56,7 @@ local function setVehicleGarage(vehicleId, garageName)
     end
 
     local state = garage.type == GarageType.DEPOT and VehicleState.IMPOUNDED or VehicleState.GARAGED
-    local numRowsAffected = Storage.setVechicleGarage(vehicleId, garageName, state)
+    local numRowsAffected = Storage.setVehicleGarage(vehicleId, garageName, state)
     if numRowsAffected == 0 then
         return false, {
             code = 'no_rows_changed',
@@ -214,7 +215,7 @@ lib.callback.register('qbx_garages:server:parkVehicle', function(source, netId, 
         props = props
     })
 
-    DeleteEntity(vehicle)
+    exports.qbx_core:DeleteVehicle(vehicle)
 end)
 
 AddEventHandler('onResourceStart', function(resource)
