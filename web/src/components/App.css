@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: #a00b0b00
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(85, 85, 85, 0);
+}
+
+body {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('https://r2.fivemanage.com/I85ce1mgrqzShls6tIDEf/images/visagranted.png'); */
+  z-index: 0;
+}
+
+.bg-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('https://r2.fivemanage.com/044RKzPS9BrORnHrSWPXh/Group_12.png');
+  z-index: 0;
+}
+
+.left-container {
+  position: relative;
+  left: 0;
+  top: 0;
+  padding: 30px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 493px;
+  height: 90%;
+  z-index: 1;
+}
+
+.left-container-heading-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+  font-size: 48px;
+}
+
+.left-container-heading {
+  margin-top: 9px;
+}
+
+.left-container-subheading {
+  opacity: 0.75;
+  font-size: 18px;
+  font-family: "Roboto", serif;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.left-container-searchBar {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px 15px;
+  max-width: 493px;
+  color: #fff;
+}
+
+.left-container-searchBar input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  flex: 1;
+  font-size: 16px;
+}
+
+.left-container-searchBar input::placeholder {
+  color: #aaa;
+}
+
+.left-container-searchBar .search-icon {
+  font-size: 10px;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.left-container-card-container {
+  min-height: 660px;
+  max-height: 720px;
+  width: 590px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.left-container-card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 10px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 493px;
+  padding: 10px;
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.left-container-card:hover {
+  background-color: rgba(0, 107, 114, 0.7);
+}
+
+.left-container-card.selected {
+  background-color: rgba(0, 107, 114, 0.7);
+}
+
+.left-container-card-numberPlate {
+  position: absolute;
+  right: 5%;
+}
+
+.left-container-card-numberPlate-Image {
+  background-image: url('https://r2.fivemanage.com/044RKzPS9BrORnHrSWPXh/PNG_PLATE_1.png');
+  background-size: cover;
+  width: 180px;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding-top: 5px;
+  font-size: 28px;
+}
+
+.left-container-card-manufacturerName {
+  opacity: 0.75;
+  font-size: 18px;
+}
+
+.left-container-card-CarName {
+  font-size: 24px;
+  line-height: 20px;
+}
+
+.left-container-card-VehicleDetails {
+  margin-top: 15px;
+  font-family: "Roboto", serif;
+  font-size: 14px;
+}
+
+.left-container-card-Garage {
+  font-size: 14px;
+  font-family: "Roboto", serif;
+}
+
+.left-container-card-key {
+  opacity: 0.75;
+}
+
+.left-container-card-value {
+  opacity: 1;
+}
+
+.left-container-bottomButton {
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #006B72;
+  padding: 10px;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  position: sticky;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.search-toggle-buttons {
+  display: flex;
+  gap: 8px;
+  font-family: "Roboto", serif;
+}
+
+.search-toggle-buttons button {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.search-toggle-buttons button.active {
+  background-color: rgba(0, 107, 114, 0.7);
+  color: #fff;
+  border-color: rgba(0, 107, 114, 0.7);
+}
+
+.search-toggle-buttons button:hover:not(.active) {
+  background-color: rgba(0, 107, 114, 0.7);
+  border-color: rgba(0, 107, 114, 0.7);
+}
+
+.right-container {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  padding: 30px;
+  gap: 10px;
+  color: #ffffff92;
+}
+
+.logo-1:hover,
+.logo-2:hover {
+  color: #fff;
+}
+
+.logo-1.selected,
+.logo-2.selected {
+  color: #fff;
+}
+
+.left-container-management {
+  display: flex;
+  gap: 10px;
+}
+
+.left-container-add-player {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px 15px;
+  max-width: 235px;
+  color: #fff;
+}
+
+.left-container-add-player input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  flex: 1;
+  font-size: 16px;
+}
+
+.left-container-add-player input::placeholder {
+  color: #aaa;
+}
+
+.left-container-add-player .search-icon {
+  font-size: 10px;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.left-container-search-player {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px 15px;
+  width: 360px;
+  color: #fff;
+}
+
+.left-container-search-player input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  flex: 1;
+  font-size: 16px;
+}
+
+.left-container-search-player input::placeholder {
+  color: #aaa;
+}
+
+.left-container-search-player .search-icon {
+  font-size: 10px;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.left-container-management-card-container {
+  min-height: 660px;
+  max-height: 720px;
+  width: 590px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.left-container-management-card {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 545px;
+  padding: 10px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.left-container-management-sub-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5px;
+}
+
+.left-container-management-card-name {
+  font-size: 32px;
+  margin-left: 5px;
+}
+
+.left-container-management-card-buttton {
+  margin-right: 20px;
+  margin-top: 1.5px;
+}
+
+.left-container-management-card-buttton:hover {
+  color: rgba(0, 107, 114, 0.7)
+}
